@@ -1,0 +1,40 @@
+package com.syntax.groupProject2;
+
+//We have to calculate the average of marks obtained in three subjects by student A and by student B. 
+//Create class 'Marks' with an abstract method 'getPercentage' that will be returning the average percentage 
+//of marks. Provide implementation of abstract method in classes 'A' and 'B'. The constructor of student A takes 
+//the marks in three subjects as its parameters and the marks in four subjects as its parameters for student B.
+//Test your code.
+
+
+interface Marks {
+	
+	void getPercentage();
+		
+		//System.out.println("averagePercentageOfMark");
+		
+	class A implements Marks {
+		
+		int math = 69;
+		int science = 74;
+		int art = 90;
+		double average = (69 + 74 + 90) /3 = 77.6;
+		double averageInPercentage = %77;
+	}	
+	
+	class B implements Marks {
+		
+		int math = 70;
+		int science = 55;
+		int art = 87;
+		int languages = 90;
+		int literature = 65;
+		
+		double average = (70 + 55 + 87 + 90 + 65)/5 = 73.4;
+		double averageInPercentage = %73;
+		
+	}
+	
+	
+
+}

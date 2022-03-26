@@ -1,0 +1,9 @@
+package com.syntax.groupProject2;
+
+public class Marks {
+	
+	abstract getPercentage() {
+		
+	}
+
+}

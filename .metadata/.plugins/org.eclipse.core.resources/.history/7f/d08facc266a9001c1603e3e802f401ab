@@ -1,0 +1,22 @@
+package com.syntax.groupProject2;
+
+import com.syntax.groupProject2.Task1.Circle;
+import com.syntax.groupProject2.Task1.Shape;
+import com.syntax.groupProject2.Task1.Square;
+
+public class Task1Tester {
+
+	public static void main(String[] args) {
+		
+		Shape shape = new Circle;
+		shape.calculateArea();
+		shape.calculatePerimeter();
+		
+		Shape [] shapes = {new Circle(), new Square()};
+		for (Shape s : shapes) {
+			s.calculateArea();
+			s.calculatePerimeter();
+
+		}
+	}
+}

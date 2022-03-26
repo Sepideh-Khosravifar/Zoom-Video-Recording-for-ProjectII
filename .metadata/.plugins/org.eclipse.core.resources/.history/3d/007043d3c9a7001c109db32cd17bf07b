@@ -1,0 +1,5 @@
+package com.syntax.groupProject2;
+
+public interface GroupTask1 {
+
+}

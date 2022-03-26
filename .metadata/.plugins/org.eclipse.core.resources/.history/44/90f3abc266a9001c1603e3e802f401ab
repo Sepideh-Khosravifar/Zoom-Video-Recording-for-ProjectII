@@ -1,0 +1,50 @@
+package com.syntax.groupProject2;
+
+public class Task1 {
+
+//Create an interface 'Shape' with undefined methods 
+//as calculateArea and calculatePerimeter. Create 2 
+//classes Circle and Square that implement functionality
+//defined in the Shape interface.Test your code.
+	
+interface Shape {
+	void calculateArea();
+	void calculatePerimeter();
+}
+	
+class Circle implements Shape {
+	
+	@Override
+	public void calculateArea () {
+		System.out.println("Calculating the Circle's area");
+	}
+
+	@Override
+	public void calculatePerimeter() {
+		System.out.println("Calculating Circle's perimeter");
+		
+	}
+}
+	
+class Square implements Shape {
+
+	@Override
+	public void calculateArea() {
+		System.out.println("Calculating Square's area");
+		
+	}
+
+	@Override
+	public void calculatePerimeter() {
+		System.out.println("Calculating Square's perimeter");
+		
+		}
+	
+	}
+
+}
+
+
+
+
+

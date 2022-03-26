@@ -1,0 +1,13 @@
+package ReviewAsel;
+public static void main(String[] args) {
+public class tester {
+	
+	Doctor doc = new Doctor ("John", "Smith", "Surgeon");
+	doc.printInfo();
+	
+	Doctor doc1 = new Doctor("Jane", "Smith");
+	doc1.specialty = "dermatologist";
+	doc1.printInfo();
+	
+
+}

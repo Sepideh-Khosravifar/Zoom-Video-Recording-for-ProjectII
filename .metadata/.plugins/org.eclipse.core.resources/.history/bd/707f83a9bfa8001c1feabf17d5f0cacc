@@ -1,0 +1,27 @@
+package com.syntax.groupProject2;
+
+interface Marks {
+	
+	void getPercentage();
+		
+		System.out.println("averagePercentageOfMark");
+		
+	class A implements Marks {
+		
+		double math;
+		double science;
+		double art;
+	}	
+	
+	class B implements Marks {
+		
+		double math;
+		double science;
+		double art;
+		double languages;
+		double literature;	
+	}
+	
+	
+
+}

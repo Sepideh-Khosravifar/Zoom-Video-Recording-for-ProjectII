@@ -1,0 +1,105 @@
+package com.syntax.groupProject;
+
+public class Car {
+
+	private double carPrice;
+	private String color;
+	
+   
+
+	public Car(double carPrice, String color) {
+		this.carPrice = carPrice;
+		this.color = color;
+				
+	}
+	
+	public double calculateSalePrice() {
+		
+		return carPrice;
+	}
+  }
+
+
+public class Truck extends Car {
+	
+	private int weight;
+	
+	public Truck(double carPrice, String color, int weight) {
+		
+		super(carPrice, color);
+		this.weight = weight;
+		
+	}
+	
+	public double calculateSalePrice() {
+		return super.calculateSalePrice() * (weight > 2000 ? 0.90 : 0.80);
+		
+	}
+}
+
+public class Sedan extends Car {
+	private int length;
+	
+public Sedan (double carPrice, String color, int length) {
+	
+	super(carPrice, color);
+	this.length = length;
+  }
+
+public double calculateCarPrice() {
+	
+	return super.calculateSalePrice() * (length  > 20 ? 0.95 : 0.90);
+	
+	}
+}
+
+public class Tester {
+	
+	public static void main(String[] args) {
+		
+		Truck truck = new Truck (55000, black, 23000);
+		Sedan sedan = new Sedan (60000, silver, 22);
+		Car car = new Car (35000, white);
+		
+		System.out.println("Truck " + truck.calculateSalePrice());
+		System.out.println("sedan " + sedan.calculateSalePrice());
+		System.out.println("Car " + car.calculateSalePrice());		
+				
+				
+	}
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,32 @@
+package ReviewAsel;
+
+public class Doctor {
+
+	//public static void main(String[] args) {
+	
+	String firstname, lastname, speciality;
+	
+	static String hospital = "jorge washington";
+	
+	
+	
+	static void work() {
+		
+		System.out.println("All doctors work at: " + hospital); // hospital is static so it can be accessed via statis methods.
+		
+		}
+	
+	void printInfo() {// static method can NOT work with non-static members
+		
+		System.out.println("Doctor " + firstname + "" + lastname + " is a " + speciality);
+	}
+	
+	void work1() { //non-static methods can access static members
+		
+		System.out.println("All doctors work at " + hospital);
+	}
+	
+	
+	
+
+}
